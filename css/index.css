@@ -1,3 +1,17 @@
+@keyframes colorGradient {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -282,7 +296,7 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    width: 90%;
+    width: 80%;
     margin: 0px auto;
     margin-bottom: 30px;
   }
@@ -290,7 +304,7 @@ img {
     font-size: 1.7rem;
   }
   .home .content-pick .destination p {
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
 }
 .home .content-pick .btn {
@@ -309,7 +323,10 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-pick .btn {
-    width: 95%;
+    width: 90%;
+    font-size: 1rem;
+    height: 25px;
+    background: #17A2B8;
   }
 }
 .header-section {
