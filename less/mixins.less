@@ -1,1 +1,29 @@
 // Mixins in here
+
+.buttonStlying(@textcolor; @backgroundcolor;){
+    display: flex;
+    background-color: @backgroundcolor;
+    color: @textcolor;
+    width: 80%;
+    height: 30px;
+    border: 1px solid @silver;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    @media(@mobile){
+        width: 90%;
+        font-size: 1.5rem;
+        height: 3.25rem;
+        background: @eastern-blue
+    }
+}
+
+
+.buttonAnimation(@amimation;){
+    animation: @animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
